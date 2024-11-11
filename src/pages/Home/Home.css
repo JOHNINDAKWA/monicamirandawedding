@@ -1,0 +1,366 @@
+
+.block {
+    position: relative;
+    width: 100%;
+    height: 1002px;
+    overflow: hidden;
+
+  }
+  
+  .block video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1; 
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    z-index: 2; 
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  
+  .overlay p {
+    color: rgba(251, 250, 247, 1);
+    text-transform: uppercase;
+    line-height: 1.8;
+    letter-spacing: 0.25em;
+    font-size: 15px;
+    text-align: center;
+    font-family: 'Noire Blanc';
+    font-weight: 700;
+    font-style: normal;
+    width: 449px;
+    margin-bottom: 16px;
+
+  }
+
+
+    
+  .overlay h1 {
+    color: rgba(251, 250, 247, 1);
+    text-transform: uppercase;
+    line-height: 1.1;
+    letter-spacing: 0.21em;
+    font-size: 54px;
+    text-align: center;
+    font-family: 'Noire Blanc';
+    font-weight: 700;
+    font-style: normal;
+    width: 449px;
+    margin-bottom: 16px;
+  }
+
+  .overlay h3 {
+    color: rgba(204, 214, 225, 1);
+    text-transform: capitalize;
+    line-height: 1.5;
+    letter-spacing: 0em;
+    font-size: 36px;
+    text-align: center;
+    font-family: 'Noir Blanc Italic';
+    font-weight: 400;
+    font-style: normal;
+    width: 473px;
+  }
+
+
+
+  .about-home {
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 10px; 
+    height: 100%;
+  }
+  
+  .about-home img {
+    z-index: 4;
+    width: 551px;
+    height: 735px;
+    margin-top: -350px; 
+  }
+  
+  .about-home-content {
+  max-width: 680px;
+  text-align: center;
+  margin-top: 20px;
+
+  }
+  
+  .about-home-content h2 {
+    color: rgba(204, 214, 225, 1);
+    text-transform: capitalize;
+    line-height: 1.5;
+    font-size: 29px;
+    font-family: 'Noir Blanc Italic';
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  
+  .about-home-content .p-1,
+  .about-home-content .p-2 {
+    color: rgba(84, 84, 84, 1);
+    line-height: 1.8;
+    font-size: 20px;
+    font-family: 'Cormorant';
+    font-weight: 400;
+    max-width: 676px;
+    margin: 0 auto;
+  }
+  
+  .p-2 {
+    margin-top: 16px;
+  }
+  
+  .lks{
+    width: 304px;
+    margin: 2rem auto;
+    padding: 12px;
+    border: 1px solid #000;
+  }
+
+  .about-home-content a{
+    text-transform: uppercase;
+    line-height: 1.1;
+    letter-spacing: 0.21em;
+    font-size: 16px;
+    text-align: center;
+    font-family: 'Noire Blanc';
+    font-weight: 700;
+    font-style: normal;
+    color: black;
+  
+
+  }
+
+  .about-home-links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    padding-top: 10px;
+  }
+
+  .about-home-links img{
+    width: 200px;
+  }
+
+
+  .gallery{
+    background-color: #fbfaf7; 
+    margin-top: 2rem;
+  }
+  .masonry-gallery{
+    width: 1200px;
+    margin: auto;
+  }
+
+/* Media Queries for responsive design */
+
+/* For mobile devices (max-width: 768px) */
+@media (max-width: 768px) {
+  .block {
+    height: 500px; /* Adjust the height for mobile screens */
+  }
+
+  .block video {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+
+  .overlay p, .overlay h1, .overlay h3 {
+    font-size: 14px; /* Reduce text size for mobile */
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .overlay h1 {
+    font-size: 36px; /* Adjust heading size */
+  }
+
+  .overlay h3 {
+    font-size: 20px; /* Adjust subheading size */
+  }
+
+  .about-home {
+    padding-top: 80px;
+    padding-bottom: 20px; /* Reduced padding for mobile */
+  }
+
+  .about-home img {
+    width: 100%; /* Make image responsive */
+    height: auto;
+    margin-top: -100px; /* Adjust margin */
+  }
+
+  .about-home-content h2 {
+    font-size: 24px; /* Smaller font size for mobile */
+  }
+
+  .about-home-content .p-1,
+  .about-home-content .p-2 {
+    font-size: 16px; /* Adjust text size for mobile */
+    max-width: 100%;
+    padding: 0 20px;
+  }
+
+  .about-home-content a {
+    font-size: 14px; /* Smaller link text size */
+    padding: 10px;
+    text-align: center;
+    color: #f7a900; /* Accent color for mobile */
+  }
+
+  .about-home-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 20px 0;
+  }
+
+  .about-home-links img {
+    width: 150px; /* Smaller logos for mobile */
+    margin-bottom: 15px;
+  }
+
+  .gallery {
+    margin-top: 2rem;
+    padding: 0 10px;
+  }
+
+  .masonry-gallery {
+    width: 100%;
+  }
+}
+
+/* For tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .block {
+    height: 650px; /* Slightly taller height for tablets */
+  }
+
+  .overlay p, .overlay h1, .overlay h3 {
+    font-size: 20px;
+  }
+
+  .overlay h1 {
+    font-size: 36px;
+  }
+
+  .overlay h3 {
+    font-size: 26px;
+  }
+
+  .about-home {
+    padding-top: 90px;
+    padding-bottom: 30px;
+  }
+
+  .about-home img {
+    width: 80%; /* Reduce image width */
+    margin-top: -200px;
+  }
+
+  .about-home-content h2 {
+    font-size: 26px;
+  }
+
+  .about-home-content .p-1,
+  .about-home-content .p-2 {
+    font-size: 18px; /* Adjust text size for tablets */
+  }
+
+  .about-home-content a {
+    font-size: 15px;
+  }
+
+  .about-home-links {
+    gap: 2rem;
+  }
+
+  .about-home-links img {
+    width: 180px;
+  }
+
+  .gallery {
+    padding: 0 20px;
+  }
+
+  .masonry-gallery {
+    width: 90%;
+  }
+}
+
+/* For large screens (min-width: 1200px) */
+@media (min-width: 1200px) {
+  .block {
+    height: 1000px; /* Increase height for larger screens */
+  }
+
+  .overlay p, .overlay h3 {
+    font-size: 18px; /* Increase font size for larger screens */
+  }
+
+  .overlay h1 {
+    font-size: 60px;
+  }
+
+  .overlay h3 {
+    font-size: 36px;
+  }
+
+  .about-home img {
+    width: 50%; /* Adjust image size */
+    margin-top: -300px;
+  }
+
+  .about-home-content h2 {
+    font-size: 32px; /* Larger text for large screens */
+  }
+
+  .about-home-content .p-1,
+  .about-home-content .p-2 {
+    font-size: 22px;
+  }
+
+  .about-home-content a {
+    font-size: 18px;
+  }
+
+  .about-home-links {
+    gap: 3rem;
+  }
+
+  .about-home-links img {
+    width: 200px;
+  }
+
+  .gallery {
+    padding: 0 40px;
+  }
+
+  .masonry-gallery {
+    width: 80%;
+  }
+}

@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Outfit:wght@100..900&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+  font-family: 'Noire Blanc';
+  src: url('./assets/fonts/noir-et-blanc/NOIRetBLANC-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Noir Blanc Italic';
+  src: url('./assets/fonts/noir-et-blanc/NOIRetBLANCItalic.woff2') format('woff2');
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+body{
+
+  overflow-x: hidden !important;
+  width: 100% !important;
+  /* background-color: #fbfaf7; */
+
+  font-family: "Cormorant", serif;
+
+}
+
+a{
+  text-decoration: none;
+}
+
+:root{
+  /* --primary: ; */
+  --font-color: color: rgba(77, 67, 58, 1);
+  /* --secondary:; */
+  --bg-color:#fbfaf7;;
+
+}
+
+html{
+  scroll-behavior: smooth;
+}

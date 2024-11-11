@@ -1,0 +1,103 @@
+/* Default styles for larger screens */
+.banner-block {
+  position: relative;
+  width: 100%;
+  height: 620px;
+  overflow: hidden;
+  background-image: url("../../assets/images/miranda-bg.jpeg");
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.banner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  z-index: 2;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.banner-overlay h1 {
+  color: rgba(251, 250, 247, 1);
+  text-transform: uppercase;
+  line-height: 1.1;
+  letter-spacing: 0.21em;
+  font-size: 60px;
+  text-align: center;
+  font-family: 'Noire Blanc';
+  font-weight: 500;
+  font-style: italic;
+  width: 449px;
+  margin-bottom: 16px;
+}
+
+.banner-overlay a {
+  color: rgba(251, 250, 247, 1);
+  text-transform: uppercase;
+  line-height: 1.8;
+  letter-spacing: 0.25em;
+  font-size: 14px;
+  text-align: center;
+  font-family: 'Noire Blanc';
+  font-weight: 400;
+  font-style: normal;
+  width: 449px;
+  margin-bottom: 16px;
+  cursor: pointer;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+  .banner-overlay h1 {
+    font-size: 50px;
+    width: 80%;
+  }
+
+  .banner-overlay a {
+    width: 80%;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner-block {
+    height: 500px; /* Reduce height for smaller screens */
+  }
+
+  .banner-overlay h1 {
+    font-size: 40px;
+    width: 90%;
+  }
+
+  .banner-overlay a {
+    width: 90%;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner-block {
+    height: 400px; /* Further reduce height on very small screens */
+  }
+
+  .banner-overlay h1 {
+    font-size: 32px;
+    width: 90%;
+  }
+
+  .banner-overlay a {
+    width: 90%;
+    font-size: 12px;
+  }
+}

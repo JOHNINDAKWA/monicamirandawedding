@@ -1,0 +1,255 @@
+.footer{
+    background: var(--bg-color);
+}
+
+.footer-logo{
+    width: 272px;
+    height: 104px;
+}
+.footer-logo img{
+    width: 100% !important;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: inherit;
+}
+
+
+.footer-top{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 3rem;
+}
+
+.socials{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.social-link{
+    color: #000;
+    font-size: 1.5rem;
+}
+
+
+  
+  .footer-medium {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 4rem;
+    border-top: 0.5px solid rgba(0, 0, 0, 0.15);
+  }
+  
+  .quick-links {
+   display: flex;
+   align-items: center;
+   justify-content: baseline;
+   gap: 2rem;
+  }
+  
+  .quick-links-left, .quick-links-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+  
+  .quick-links h3 {
+    color: rgba(27, 27, 27, 1);
+    text-transform: uppercase;
+    line-height: 1.8;
+    letter-spacing: 0.25em;
+    font-size: 15px;
+    font-family: 'Noire Blanc';
+    font-weight: 600;
+    font-style: normal;
+    cursor: pointer;
+  }
+
+  .quick-links .special-h3{
+    color: rgba(27, 27, 27, 1);    
+    text-transform: none;
+    letter-spacing: 0.1em;
+    font-size: 16px;
+    text-align: right;
+    font-family: 'Garamond Italic';
+    font-weight: 400;
+    font-style: italic;
+
+  }
+
+
+  
+
+  .footer-sta {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  
+  .footer-sta p {
+    color: rgba(27, 27, 27, 1);
+    line-height: 1.8;
+    letter-spacing: 0.05em;
+    font-size: 18px;
+    text-align: center;
+    font-family: 'Cormorant';
+    font-weight: 400;
+    font-style: normal;
+    width: 451px;
+    margin-bottom: 2rem;
+  }
+  
+  .footer-sta a {
+    color: #ffb400;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s;
+    padding: 12px 20px;
+    background-color: rgba(204, 214, 225, 1);
+  }
+  
+  .footer-sta a:hover {
+    color: #a37c06; 
+  }
+  
+  .footer-copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    padding-right: 3rem;
+    background-color: rgba(204, 214, 225, 1);
+    padding: 8px;
+  }
+  
+  .footer-copyright h3 {
+    font-size: 0.9rem;
+    margin-bottom: 0.2rem;
+    color: #000000;
+  }
+
+  
+  .footer-medium .quick-links-left h3,
+  .footer-medium .quick-links-right h3 {
+    margin: 0;
+    font-weight: 500;
+    display: inline-block;
+  }
+  
+  
+  .footer-medium .quick-links .quick-links-right h3:hover::after {
+    background-color: #ffb400;
+  }
+  
+
+
+  @media (max-width: 1100px) {
+    .footer-top {
+      flex-direction: column;
+      align-items: center;
+      padding: 1rem;
+    }
+  
+    .footer-logo {
+      width: 200px;
+      height: auto;
+    }
+  
+    .socials {
+      justify-content: center;
+      margin-top: 1rem;
+    }
+  
+    .footer-medium {
+      flex-direction: column;
+      padding: 1.5rem;
+    }
+  
+    .quick-links {
+      gap: 1.5rem;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-sta p {
+      width: 100%;
+      font-size: 16px;
+    }
+  
+    .footer-sta a {
+      font-size: 14px;
+      padding: 10px 15px;
+    }
+  }
+  
+  @media (max-width: 700px) {
+    .footer-logo {
+      width: 150px;
+    }
+  
+    .footer-medium {
+      padding: 1rem;
+    }
+  
+    .quick-links-left h3,
+    .quick-links-right h3 {
+      font-size: 14px;
+    }
+  
+    .footer-sta p {
+      font-size: 14px;
+    }
+  
+    .footer-sta a {
+      padding: 8px 12px;
+    }
+  
+    .footer-copyright {
+      flex-direction: column;
+      gap: 1rem;
+      padding: 1rem 0;
+    }
+  
+    .footer-copyright h3,
+    .footer-copyright p {
+      font-size: 0.8rem;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .footer-logo {
+      width: 120px;
+    }
+  
+    .socials {
+      gap: 0.5rem;
+      font-size: 1.2rem;
+    }
+  
+    .footer-medium {
+      padding: 0.5rem;
+    }
+  
+    .quick-links-left h3,
+    .quick-links-right h3,
+    .footer-sta p {
+      font-size: 12px;
+    }
+  
+    .footer-sta a {
+      font-size: 12px;
+      padding: 6px 10px;
+    }
+  
+    .footer-copyright h3,
+    .footer-copyright p {
+      font-size: 0.7rem;
+    }
+  }
+  

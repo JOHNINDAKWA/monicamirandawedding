@@ -1,0 +1,348 @@
+
+.wedding-banner-block {
+    position: relative;
+    width: 100%;
+    height: 648px;
+    overflow: hidden;
+
+  }
+
+
+  .wedding-banner-block_2{
+    height: 1014px;
+  }
+
+  .wedding-banner-block_2 h2{
+    color: rgba(251, 250, 247, 1);
+    line-height: 1.5;
+    letter-spacing: 0.025em;
+    font-size: 42px;
+    text-align: center;
+    font-family: 'Noire Blanc';
+    font-weight: 400;
+    font-style: normal;
+    width: 400px;
+    margin: 1rem auto 2rem;
+  }
+
+  .wedding-banner-block_2 h3{
+    color: rgba(251, 250, 247, 1);
+    font-size: 21px;
+    text-align: left;
+    line-height: 1.8;
+    letter-spacing: 0.05em;
+    font-family: 'Cormorant';
+    font-weight: 400;
+    font-style: normal;
+    width: 703px;
+    margin: 1rem auto ;
+  }
+
+  .wedding-banner-block_2 h3 strong{
+    font-weight: 800;
+    font-size: 23px;
+  }
+  
+  .wedding-banner-block img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1; 
+  }
+  
+  .wedding-banner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(77, 67, 58, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    z-index: 2; 
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+    
+  .wedding-banner-overlay h1 {
+    color: rgba(251, 250, 247, 1);
+    font-size: 78px;
+    line-height: 1.5;
+    letter-spacing: 0.025em;
+    text-align: center;
+    font-family: 'Noire Blanc';
+    font-weight: 400;
+    font-style: normal;
+    width: 583px;
+  }
+
+    
+  .wedding-banner-overlay p{
+    color: rgba(255, 255, 255, 1);
+    font-size: 17px;
+    text-align: center;
+    line-height: 1.8;
+    letter-spacing: 0.05em;
+    font-family: 'Cormorant';
+    font-weight: 400;
+    font-style: normal;
+    width: 580px;
+
+  }
+
+
+
+  .wedding-approach{
+    width: 1200px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    margin-bottom: 8rem;
+  }
+
+  .wedding-approach-top{
+    display: flex;
+    gap: 2rem;
+    align-items: flex-end;
+    padding-bottom: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .wedding-approach-top-left{
+    width: 352px;
+    height: 473px;
+    margin-top: -40px;
+    z-index: 3;
+  }
+
+  .wedding-approach-top-left img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+     transition: "opacity 1s ease-in-out";
+     border-radius: 0;
+  }
+
+  .wedding-approach-top-right{
+    width: 283px;
+    height: 393px;
+  }
+
+  .wedding-approach-top-right img{
+    width: 100%;
+    height: auto;
+     border-radius: 0;
+     object-fit: cover;
+     transition: "opacity 2s ease-in-out";
+  }
+
+  .wedding-approach-bottom{
+    margin-top: 3rem;
+    text-align: center;
+    margin: auto;
+  }
+
+
+  .wedding-approach-bottom h2{
+    width: 626px;
+    margin: auto;
+    font-size: 36px;
+    color: rgba(204, 214, 225, 1);
+    text-transform: capitalize;
+    line-height: 1.5;
+    letter-spacing: 0em;
+    text-align: center;
+    font-family: 'Noir Blanc Italic';
+    font-weight: 600;
+    font-style: normal;
+    padding-top: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  .wedding-approach-bottom p{
+    width: 675px;
+    font-size: 18px;
+    text-align: center;
+    color: rgba(27, 27, 27, 1);
+    line-height: 1.8;
+    letter-spacing: 0.05em;
+    font-family: 'Cormorant';
+    font-weight: 400;
+    font-style: normal;
+    margin: 2rem auto;
+
+  }
+
+  .wedding-approach-bottom-content h1{
+    line-height: 1.2;
+    font-size: 39px;
+    color: rgba(27, 27, 27, 1);
+    text-transform: uppercase;
+    line-height: 1.8;
+    letter-spacing: 0.25em;
+    text-align: center;
+    font-family: 'Noire Blanc';
+    font-weight: 400;
+    font-style: normal;
+    width: 268px;
+    margin: 2rem auto;
+  }
+
+  .wedding-approach-bottom-content h4{
+    font-size: 23px;
+    color: rgba(204, 214, 225, 1);
+    text-transform: capitalize;
+    line-height: 1.5;
+    letter-spacing: 0em;
+    text-align: center;
+    font-family: 'Noir Blanc Italic';
+    font-weight: 600;
+    font-style: normal;
+  }
+
+  .wedding-unused{
+    width: 1200px;
+    margin: 4rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7rem;
+  }
+
+  .wedding-unused-left{
+    width: 228px;
+    height: 307px;
+  }
+  .wedding-unused img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 0;
+  }
+
+
+
+
+
+  /* Media Query for Tablets */
+@media (max-width: 1024px) {
+  .wedding-banner-block,
+  .wedding-banner-block_2 {
+    height: auto;
+  }
+
+  .wedding-banner-overlay h1 {
+    font-size: 50px;
+    width: 90%;
+  }
+
+  .wedding-banner-overlay p {
+    font-size: 15px;
+    width: 90%;
+  }
+
+  .wedding-approach {
+    width: 100%;
+    margin-bottom: 4rem;
+    padding: 0 1rem;
+  }
+
+  .wedding-approach-top {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .wedding-approach-top-left,
+  .wedding-approach-top-right {
+    width: 100%;
+    height: auto;
+  }
+
+
+  .wedding-unused{
+    display: none;
+  }
+
+  .wedding-approach-bottom h2 {
+    width: 90%;
+    font-size: 30px;
+  }
+
+  .wedding-approach-bottom p {
+    width: 90%;
+    font-size: 16px;
+  }
+
+  .wedding-approach-bottom-content h1 {
+    font-size: 30px;
+    width: 80%;
+  }
+
+  .wedding-approach-bottom-content h4,
+  .wedding-approach-bottom-content p {
+    width: 90%;
+    font-size: 18px;
+  }
+}
+
+/* Media Query for Mobile */
+@media (max-width: 768px) {
+  .wedding-banner-block,
+  .wedding-banner-block_2 {
+    height: auto;
+
+  }
+
+  
+  .wedding-approach-top-left{
+
+    display: none;
+  }
+
+
+  .wedding-banner-overlay h1 {
+    font-size: 36px;
+    width: 100%;
+  }
+
+  .wedding-banner-overlay p {
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .wedding-approach {
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+
+  .wedding-approach-top {
+    gap: 1rem;
+  }
+
+  .wedding-approach-top-left,
+  .wedding-approach-top-right {
+    width: 100%;
+  }
+
+  .wedding-approach-bottom h2 {
+    font-size: 26px;
+    width: 100%;
+    padding-top: 2rem;
+  }
+
+  .wedding-approach-bottom p,
+  .wedding-approach-bottom-content h1,
+  .wedding-approach-bottom-content h4,
+  .wedding-approach-bottom-content p {
+    width: 100%;
+    font-size: 16px;
+  }
+}

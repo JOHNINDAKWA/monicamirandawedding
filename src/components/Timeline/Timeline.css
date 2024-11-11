@@ -1,0 +1,412 @@
+.timeline-container {
+  background: #fbfaf7;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  margin: 3rem auto;
+}
+
+.timeline-container h2 {
+  color: rgba(27, 27, 27, 1);
+  text-transform: uppercase;
+  line-height: 1.8;
+  letter-spacing: 0.25em;
+  font-size: 18px;
+  text-align: center;
+  font-family: "Noire Blanc Italic";
+  font-weight: 400;
+  font-style: italic;
+}
+
+.timeline-container h1 {
+  color: rgba(77, 67, 58, 1);
+  line-height: 1.5;
+  letter-spacing: 0.025em;
+  font-size: 42px;
+  text-align: center;
+  font-family: "Noire Blanc";
+  font-weight: 400;
+  font-style: normal;
+}
+
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 100px auto;
+}
+
+.timeline .container {
+  padding: 10px 10px;
+  position: relative;
+  width: 50%;
+  animation: movedown 1s linear forwards;
+  opacity: 0;
+  margin-top: -100px;
+}
+
+.timeline .container:nth-child(1) {
+  margin-top: 0;
+}
+
+@keyframes movedown {
+  0% {
+    opacity: 1;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.timeline .container:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.timeline .container:nth-child(2) {
+  animation-delay: 1s;
+}
+
+.timeline .container:nth-child(3) {
+  animation-delay: 2s;
+}
+
+.timeline .container:nth-child(4) {
+  animation-delay: 3s;
+}
+
+.timeline .container:nth-child(5) {
+  animation-delay: 4s;
+}
+
+
+
+.timeline .text-box {
+  padding: 0 25px;
+  position: relative;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.right-container .text-box{
+    padding-right: 60px;
+}
+
+.left-container .text-box{
+    padding-left: 60px;
+}
+
+.right-container {
+  left: 0;
+}
+
+.left-container {
+  left: 50%;
+}
+
+.timeline .container img {
+  position: absolute;
+  width: 40px;
+  border-radius: 50%;
+  right: -20px;
+  top: 32px;
+  z-index: 10;
+}
+
+.left-container img {
+  left: -20px;
+}
+
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  background: rgba(27, 27, 27, 0.2);
+  top: 0;
+  left: 50%;
+  margin-left: -3px;
+  z-index: 2;
+  animation: moveline 6s linear forwards;
+}
+
+@keyframes moveline {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 100%;
+  }
+}
+
+.text-box h2 {
+  color: rgba(77, 67, 58, 1);
+  line-height: 1.2;
+  letter-spacing: 0.002em;
+  font-size: 42px;
+  text-align: left;
+  font-family: "Noire Blanc";
+  font-weight: 400;
+  font-style: normal;
+}
+
+.right-container .text-box h2 {
+  text-align: right;
+}
+
+.timeline .text-box h5 {
+  color: rgba(27, 27, 27, 1);
+  line-height: 1.8;
+  letter-spacing: 0.25em;
+  font-size: 15px;
+  font-family: "Noire Blanc";
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  text-align: right;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  /* width: 123px; */
+}
+
+ .timeline .text-box .left {
+  text-align: left;
+}
+
+.timeline .text-box p {
+  font-size: 18px;
+  text-align: right;
+  color: rgba(27, 27, 27, 1);
+  line-height: 1.8;
+  letter-spacing: 0.05em;
+  font-family: "Cormorant";
+  font-weight: 400;
+  font-style: normal;
+  padding-left: 200px;
+}
+
+.left-container .text-box p {
+  text-align: left;
+  padding-left: 0;
+  padding-right: 200px;
+}
+
+.right-container-arrow {
+  height: 0;
+  width: 25px;
+  position: absolute;
+  top: 15px;
+  z-index: 1;
+  border: 0.5px solid rgba(27, 27, 27, 0.2);
+  right: -8px;
+}
+
+.left-container-arrow {
+  height: 0;
+  width: 25px;
+  position: absolute;
+  top: 15px;
+  z-index: 1;
+  border: 0.5px solid rgba(27, 27, 27, 0.2);
+  left: -12px;
+}
+
+@media screen and (max-width: 768px) {
+  .timeline {
+    margin: 50px auto;
+  }
+
+  .timeline::after {
+    left: 31px;
+  }
+
+  .timeline .container {
+    width: 100%;
+    padding-left: 80px;
+    padding-right: 25px;
+    margin-top: 10px;
+  }
+
+  .timeline .text-box {
+    font-size: 13px;
+  }
+
+  .timeline .text-box p{
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .left-container .text-box p {
+    padding-right: 0;
+  }
+
+  .left-container .text-box {
+    padding-left: 30px;
+}
+
+  .right-container .text-box h2 {
+    text-align: left;
+  }
+
+  .right-container .text-box h5 {
+    text-align: left;
+  }
+
+  .right-container .text-box p {
+    text-align: left;
+  }
+  .text-box h5 {
+    margin-bottom: 10px;
+  }
+
+  .left-container {
+    left: 0;
+  }
+
+  .left-container img,
+  .right-container img {
+    left: 10px;
+  }
+
+  .right-container-arrow {
+    border-right: 15px solid #fff;
+    border-left: 0;
+    left: -15px;
+  }
+
+  .left-container-arrow{
+    border-right: 15px solid #fff;
+    border-left: 0;
+    left: -15px;
+  }
+}
+
+
+
+@media screen and (max-width: 1024px) {
+  .timeline-container h1 {
+    font-size: 36px;
+  }
+
+  .timeline-container h2 {
+    font-size: 16px;
+  }
+
+  .timeline {
+    margin: 80px auto;
+  }
+
+  .timeline .container {
+    width: 100%;
+    margin: 20px 0;
+    padding: 0 15px;
+  }
+
+  .timeline .text-box h2 {
+    font-size: 32px;
+  }
+
+  .timeline .text-box h5 {
+    font-size: 14px;
+  }
+
+  .timeline .text-box p {
+    font-size: 16px;
+  }
+
+  .right-container .text-box,
+  .left-container .text-box {
+    padding: 0 40px;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  .timeline-container {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .timeline-container h1 {
+    font-size: 32px;
+  }
+
+  .timeline-container h2 {
+    font-size: 14px;
+  }
+
+  .timeline .container {
+    width: 100%;
+    margin: 15px 0;
+    padding: 0 10px;
+  }
+
+  .timeline .text-box h2 {
+    font-size: 28px;
+  }
+
+  .timeline .text-box h5 {
+    font-size: 13px;
+  }
+
+  .timeline .text-box p {
+    font-size: 15px;
+  }
+
+  .right-container .text-box,
+  .left-container .text-box {
+    padding: 0 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .timeline-container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .timeline-container h1 {
+    font-size: 28px;
+  }
+
+  .timeline-container h2 {
+    font-size: 12px;
+  }
+
+  .timeline .container {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 15px;
+  }
+
+  .timeline .text-box h2 {
+    font-size: 24px;
+  }
+
+  .timeline .text-box h5 {
+    font-size: 12px;
+    text-align: left;
+  }
+
+  .timeline .text-box p {
+    font-size: 14px;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: left;
+  }
+
+  .right-container .text-box,
+  .left-container .text-box {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  .timeline .container img {
+    width: 30px;
+    left: 10px;
+    top: 20px;
+  }
+  
+  .timeline::after {
+    left: 25px;
+  }
+}
