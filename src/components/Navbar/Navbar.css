@@ -62,7 +62,7 @@
   
   .bars-icon svg {
     font-size: 30px;
-    color: var(--font-color);
+    color: rgb(85, 85, 85);
   }
   
 /* Mobile menu styles */

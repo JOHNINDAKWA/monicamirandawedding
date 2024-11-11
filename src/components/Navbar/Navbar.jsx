@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { FaInstagram, FaPinterestP, FaFacebookF, FaTwitter, FaLinkedinIn, FaBars, FaTimes } from "react-icons/fa";
+import { FaInstagram, FaPinterestP, FaFacebookF, FaTwitter, FaLinkedinIn, FaTimes } from "react-icons/fa";
 import Logo from '../../assets/images/logo2.png';
+import { HiOutlineBars4 } from "react-icons/hi2";
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -31,7 +32,7 @@ const Navbar = () => {
 
         {/* Mobile Menu Toggle (Hamburger) */}
         <div className="bars-icon" onClick={toggleMenu}>
-          <FaBars />
+        <HiOutlineBars4 />
         </div>
       </div>
 
